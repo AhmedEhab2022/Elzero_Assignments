@@ -7,11 +7,13 @@
 
 .contaner {
   background-color: #eee;
-  padding: 40px;
+  margin: 10px;
+  padding: 50px;
   display: grid;
+  justify-content: center;
+  align-content: center;
   gap: 10px;
-  grid-template-rows: repeat(11, calc((100% - 110px) / 11));
-  grid-template-columns: repeat(4, calc((100% - 40px) / 4));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .description {
@@ -20,6 +22,10 @@
 }
 
 .team-member {
+  display: grid;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 20px;
   background-color: white;
   padding: 20px;
   border-bottom: 3px solid orangered;
@@ -27,16 +33,20 @@
 }
 
 .team-member::after {
-  content: '“';
-  position: absolute;
+  content: "''";
   color: #bebdbd;
-  font-size: large;
-  left: 0;
-  top: 0;
+  font-style: italic;
+  position: absolute;
+  font-size: 50px;
+  align-self: end;
+  justify-self: end;
+  padding-right: 20px;
+  line-height: 20px;
 }
 
-.team-member * {
-  lin
+.team-member div {
+  display: grid;
+  gap: 7px;
 }
 
 .black {
@@ -53,13 +63,13 @@
 }
 
 .one, .two, .five, .six, .seven, .eight, .nine, .ten {
-  grid-row: span 3;
+  grid-row: span 1;
 }
 
 .three {
-  grid-row: span 9;
+  grid-row: span 3;
 }
 
 .four {
-  grid-row: span 6;
+  grid-row: span 2;
 }
