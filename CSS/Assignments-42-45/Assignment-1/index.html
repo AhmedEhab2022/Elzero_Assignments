@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div {
+      text-align: center;
+      padding: 15px;
+      margin: 10px;
+    }
+
+    .contaner {
+      background-color: #eee;
+      width: 400px;
+      margin: 90px auto;
+      height: 130px;
+      transition: 0.5s;
+    }
+
+    .contaner:hover {
+      margin-top: 70px;
+    }
+
+    .contaner:hover .transtion-after {
+      margin-top: 30px;
+    }
+
+    .transtion-after {
+      background-color: #dddbdb;
+      border-left: 5px solid #e6e5e5;
+      transition: margin-top 0.5s 0.5s;
+    }
+
+  </style>
+  <body>
+    <div class="contaner">
+      Will Go Up On Hover in Half Second
+      <div class="transtion-after">Will Go Down After Half Second</div>
+    </div>
+  </body>
+</html>

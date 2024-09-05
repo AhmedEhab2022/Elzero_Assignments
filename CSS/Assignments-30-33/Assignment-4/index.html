@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <caption>Developers Rating</caption>
+    <thead>
+      <tr>
+        <td>Avatar</td>
+        <td>Group</td>
+        <td>Name</td>
+        <td>Points</td>
+        <td>Control</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="./pic_boy.jpg"/></td>
+        <td>Ninja</td>
+        <td>Ahmed Mohamed</td>
+        <td>120</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./pic_boy.jpg"/></td>
+        <td rowspan="2">Shades</td>
+        <td>Shady Nabil</td>
+        <td>180</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./girl_image.jpg"/></td>
+        <td>Eman Mohamed</td>
+        <td>160</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./pic_boy.jpg"/></td>
+        <td rowspan="2">Valhala</td>
+        <td>Mohamed Ibrahim</td>
+        <td>190</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./girl_image.jpg"/></td>
+        <td>Noor Atef</td>
+        <td>110</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="./pic_boy.jpg"/></td>
+        <td>Union</td>
+        <td>Mahmoud Adel</td>
+        <td>90</td>
+        <td>
+          <button class="view">View</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  table {
+    width: 700px;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  caption {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  td {
+    background-color: #eee;
+    padding: 20px;
+  }
+
+  thead td {
+    background-color: rgb(69, 68, 68);
+    color: white;
+  }
+
+  img {
+    width: 80px;
+    
+    border: 1px solid  rgb(86, 86, 86);
+  }
+
+  button {
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .view {
+    background-color: #09b4ee;
+  }
+
+  .delete {
+    background-color: #ec3e78;
+  }
+</style>
+</html>

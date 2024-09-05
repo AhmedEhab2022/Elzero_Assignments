@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+</head>
+<body>
+  <div class="element element-1">This Is Important Note</div>
+  <div class="element element-2">This Is Important Note</div>
+  <div class="element element-3">This Is Important Note</div>
+</body>
+<style>
+  .element {
+    width: 400px;
+    background-color: #dcdcdc;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .element::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 11px;
+    bottom: 0;
+    width: 5px;
+    height: 60%;
+    background-color: #ff0066;
+  }
+
+  .element.element-2::before {
+    background-color: blue;
+  }
+
+  .element-2 {
+    visibility: hidden;
+  }
+
+  .element.element-3::before {
+    background-color: green;
+  }
+</style>
+</html>

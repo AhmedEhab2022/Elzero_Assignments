@@ -1,0 +1,12 @@
+<div class="assign-4-shape-1">Normal Div</div>
+<div class="assign-4-shape-2">Normal Div</div>
+<div class="assign-4-shape-3">Normal Div</div>
+<div class="assign-4-shape-4">Normal Div</div>
+
+إستخدم البنية السابقة لعمل المطلوب
+ال Div طوله وعرضه هو 400px
+قم بوضع الصورة الموجودة في بداية التكليفات خلفية للعنصر
+في Shape 1 قم بجعل الخلفية تملأ 80% من الطول والعرض الخاص بالعنصر
+في Shape 2 قم بعمل الشكل مثل الصورة
+في Shape 3 قم بعمل الشكل مثل الصورة
+في Shape 4 قم بجعل الخلفية تأخذ 50% من طول وعرض العنصر وقم بتغيير مكانها

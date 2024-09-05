@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    counter-reset: div;
+  }
+
+  div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: -5px -5px 0px 0px rgb(241, 50, 82), 5px 5px 0px 0px rgb(20, 160, 215);
+  }
+
+  div::before {
+    content: counter(div);
+    counter-increment: div;
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 39px;
+    top: -13px;
+  }
+
+  div::after {
+    content: "Element";
+    position: absolute;
+    left: 21px;
+    top: 39px;
+  }
+</style>
+</html>

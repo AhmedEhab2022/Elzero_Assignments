@@ -1,0 +1,12 @@
+<div class="assign-2-shape-1">Normal Div</div>
+<div class="assign-2-shape-2">Normal Div</div>
+<div class="assign-2-shape-3">Normal Div</div>
+<div class="assign-2-shape-4">Normal Div</div>
+
+إستخدم البنية السابقة لعمل المطلوب
+ال Div طوله وعرضه هو 400px
+قم بوضع الصورة الموجودة في بداية التكليفات خلفية للعنصر
+في Shape 1 قم بجعل الخلفية لا تتكرر نهائيا
+في Shape 2 قم بجعل الخلفية تتكرر طوليا فقط
+في Shape 3 قم بجعل الخلفية تتكرر عرضيا فقط
+في Shape 4 قم بجعل الخلفية تتكرر طوليا وعرضيا

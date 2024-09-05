@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .contaner {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .price {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #eee;
+    width: 120px;
+    height: 155px;
+    position: relative;
+  }
+
+  .circle {
+    background-color: rgb(226, 223, 223);
+    border-radius: 50%;
+    padding: 50px 0px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    color: white;
+    background-color: rgb(11, 172, 235);
+    border: none;
+    padding: 5px;
+    width: 120px;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+
+  .basic::after {
+    content: '';
+    background-color: #0baceb;
+    height: 175px;
+    width: 0.5px;
+    position: absolute;
+    left: 152px;
+    top: 0;
+  }
+
+  .pro::before {
+    content: 'Or';
+    background-color: rgb(11, 172, 235);
+    border-radius: 50%;
+    font-size: 6px;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    position: absolute;
+    left: -19px;
+    top: 81px;
+  }
+</style>
+<body>
+  <section class="contaner">
+    <div class="price basic">
+      <button class="btn">Basic</button>
+      <p class="circle">Free</p>
+    </div>
+    <div class="price pro">
+      <button class="btn">Pro</button>
+      <p class="circle">$30</p>
+    </div>
+  </section>
+</body>
+</html>

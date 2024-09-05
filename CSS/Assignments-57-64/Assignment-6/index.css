@@ -1,0 +1,65 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contaner {
+  background-color: #eee;
+  padding: 40px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(11, calc((100% - 110px) / 11));
+  grid-template-columns: repeat(4, calc((100% - 40px) / 4));
+}
+
+.description {
+  font-size: large;
+  font-weight: bold;
+}
+
+.team-member {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 3px solid orangered;
+  position: relative;
+}
+
+.team-member::after {
+  content: '“';
+  position: absolute;
+  color: #bebdbd;
+  font-size: large;
+  left: 0;
+  top: 0;
+}
+
+.team-member * {
+  lin
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.role {
+  color: #bebdbd;
+}
+
+.one, .five, .six {
+  grid-column: span 2;
+}
+
+.one, .two, .five, .six, .seven, .eight, .nine, .ten {
+  grid-row: span 3;
+}
+
+.three {
+  grid-row: span 9;
+}
+
+.four {
+  grid-row: span 6;
+}

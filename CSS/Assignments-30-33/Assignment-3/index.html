@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li class="list">
+      HTML
+      <ol class="ol" start="10">
+        <li>Slim</li>
+        <li>Pugjs</li>
+        <li>HAML</li>
+      </ol>
+    </li>
+    <li class="list">
+      CSS
+      <ol class="ol css-list" start="10">
+        <li>SASS</li>
+        <li>LESS</li>
+        <li>PostCSS</li>
+      </ol>
+    </li>
+    <li class="list js-list">
+      JavaScript
+      <ul class="ul">
+        <li>Vuejs</li>
+        <li>Sveltejs</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    width: 400px;
+    margin: 50px auto;
+    list-style-type: none;
+  }
+
+  ul li {
+    background-color: #eee;
+  }
+
+  .ul, .ol {
+    margin-left: -10px;
+  }
+
+  .ul li, .ol li {
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .list {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .ul {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: -25px;
+  }
+
+  .css-list {
+    list-style-type: upper-roman;
+  }
+
+  .js-list {
+    margin-bottom: -10px;
+  }
+
+  .js-list li {
+    margin-left: -10px;
+    padding-right: 10px;
+    list-style: circle inside;
+    width: 338px;
+  }
+
+</style>
+</html>

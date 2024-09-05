@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 400px;
+      height: 300px;
+      background-color: #eee;
+      position: relative;
+      padding: 20px;
+      margin: 70px auto;
+    }
+
+    div::before {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background-image: linear-gradient(
+        to right,
+        #f44336,
+        #f44336 10%,
+        #e91e63 10%,
+        #e91e63 20%,
+        #9c27b0 20%,
+        #673ab7 30%,
+        #3f51b5 30%,
+        #3f51b5 40%,
+        #2196f3 40%,
+        #2196f3 50%,
+        #03a9f4 50%,
+        #00bcd4 60%,
+        #009688 60%,
+        #009688 70%,
+        #4caf50 70%,
+        #4caf50 80%,
+        #cddc39 80%,
+        #cddc39 90%,
+        #ffeb3b 90%
+      );
+      top: -5px;
+      left: 0;
+    }
+  </style>
+  <body>
+    <div>Ahmed</div>
+  </body>
+</html>

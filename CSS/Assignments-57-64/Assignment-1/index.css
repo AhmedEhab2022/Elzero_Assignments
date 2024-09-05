@@ -1,0 +1,32 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 70px auto;
+  display: grid;
+  counter-set: element 0;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: repeat(3, calc(97% / 3));
+  grid-template-rows: 10% 85%;
+}
+
+.grid div {
+  background-color: #607d8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div::after {
+  content: "Element "counter(element)"";
+  counter-increment: element 1;
+  color: white;
+} 
