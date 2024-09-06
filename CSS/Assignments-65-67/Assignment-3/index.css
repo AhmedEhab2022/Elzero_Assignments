@@ -1,0 +1,45 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 200px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid lightgray;
+}
+
+div::before,
+div::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: -9.5px;
+  left: -10px;
+  border: 10px solid;
+  transition: 0.5s;
+}
+
+div::before {
+  border-color: #e91e63;
+  border-left-color: transparent;
+}
+
+div::after {
+  border-color: #2196f3;
+  scale: 1.104;
+  border-right-color: transparent;
+  transition-delay: 0.5s;
+}
+
+div:hover::before,
+div:hover::after {
+  rotate: 360deg;
+}
