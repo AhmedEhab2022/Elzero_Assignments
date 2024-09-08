@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #607D8B;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 5px solid black;
+  padding: 0px 20px;
+}
+
+div::before {
+  content: '';
+  background-color: black;
+  width: 165.5px;
+  height: 165.5px;
+  position: absolute;
+  left: 35px;
+  top: -85px;
+  transform: rotate(45deg);
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+div::after {
+  content: "Elzero";
+  position: absolute;
+  left: 10px;
+  top: 174px
+}
