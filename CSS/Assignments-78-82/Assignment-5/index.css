@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+div[title="Elzero"]:last-child:not(.no-need, .no-need div[title="Elzero"]) {
+  color: red;
+}

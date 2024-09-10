@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+:not(html, body, h3, div:last-child, div:first-child) {
+  color: red;
+}

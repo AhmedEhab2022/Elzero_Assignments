@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.parent > .baby:only-child {
+  color: red;
+}
+/* Or */
+.parent > .baby:only-of-type {
+  color: red;
+}
