@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contaner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.e,
+.l {
+  display: grid;
+  width: 110px;
+  height: 150px;
+  position: relative;
+}
+
+.e div,
+.l div {
+  background-color: #323234;
+}
+
+.e {
+  gap: 40px 0px;
+  grid-template-columns: 20% repeat(3, calc((80% - 15px) / 3));
+  justify-content: center;
+}
+
+.l {
+  grid-template-rows: 55%;
+  grid-template-columns: 20% 30% 30%;
+}
+
+.l .row {
+  grid-column: span 3;
+}
+
+.l .column {
+  grid-column: span 1;
+}
+
+.column {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.e .row {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+
+.l::after,
+.e::after {
+  content: '';
+  background-color: #fea604;
+  position: absolute;
+  width: 14.5px;
+  height: 14.5px;
+}
+
+.l::after {
+  left: 68.7px;
+  top: 131.5px;
+  animation-name: change-position2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.e::after {
+  left: 83px;
+  top: 4.5px;
+  animation-name: change-position;
+  animation-delay: 1.7s;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-position {
+  0% {
+    left: 83px;
+    top: 4px;
+  }
+  5% {
+    left: 11.4px;
+    top: 4px;
+  }
+  10% {
+    left: 11.4px;
+    top: 67.5px;
+  }
+  15% {
+    left: 83px;
+    top: 67.5px;
+  }
+  20% {
+    left: 11.4px;
+    top: 67.5px;
+  }
+  25% {
+    left: 11.4px;
+    top: 131px;
+  }
+  30% {
+    left: 83px;
+    top: 131px
+  }
+  35% {
+    left: 11.4px;
+    top: 131px;
+  }
+  40% {
+    left: 11.4px;
+    top: 67.5px;
+  }
+  45% {
+    left: 11.4px;
+    top: 4px;
+  }
+  50% {
+    left: 83px;
+    top: 4px;
+  }
+  100% {
+    left: 83px;
+    top: 4px;
+  }
+}
+
+@keyframes change-position2 {
+  0% {
+    left: 68.7px;
+    top: 131.5px;
+  }
+  15% {
+    left: 3.7px;
+    top: 131.5px;
+  }
+  30% {
+    left: 3.7px;
+    top: 4.5px;
+    background-color: #fea604;
+  }
+  45% {
+    left: 3.7px;
+    top: 4.5px;
+    background-color: #323234;
+    visibility: hidden;
+  }
+  60% {
+    left: 68.7px;
+    top: 131.5px;
+    background-color: #323234;
+    visibility: hidden;
+  }
+  100% {
+    left: 68.7px;
+    top: 131.5px;
+    background-color: #323234;
+    visibility: hidden;
+  }
+}
