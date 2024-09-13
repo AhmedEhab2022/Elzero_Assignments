@@ -21,6 +21,7 @@ body {
   background-color: #EEE;
   padding: 20px;
   text-align: center;
+  border: 1px solid lightgray;
 }
 
 .container div h3 {
