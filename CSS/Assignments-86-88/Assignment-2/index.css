@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  background-color: #DDD;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+}
+
+.arrow::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 20px solid #DDD;
+}
+
+.top::after {
+  left: 50%;
+  top: -36px;
+  transform: translateX(-50%);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.right::after {
+  right: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.bottom::after {
+  left: 50%;
+  bottom: -36px;
+  transform: translateX(-50%);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.left::after {
+  left: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
